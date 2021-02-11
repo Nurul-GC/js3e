@@ -5,7 +5,7 @@
 <title>Creating and Using Arrays</title>
 <link href="../_css/site.css" rel="stylesheet">
 <script>
-
+var listaPersonagens = ['João', 'António', 'Paulo', 'Nurul'];
 </script>
 </head>
 <body>
@@ -17,8 +17,11 @@
     <div class="main">
       <h1>Creating and Using Arrays</h1>
       <script>
-		
-	  </script>
+        document.write("<p>O primeiro personagem é: <b>"+listaPersonagens[0]+"</b></p>");
+        document.write("<p>O ultimo Personagem é: <b>"+listaPersonagens[listaPersonagens.length-1]+"</b></p>");
+        listaPersonagens.unshift('GC');
+        document.write("<p>Ups, quase me esquecia do: <b>"+listaPersonagens[0]+"</b></p>");
+	    </script>
      </div>
   </div>
   <footer>
